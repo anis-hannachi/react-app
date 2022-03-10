@@ -10,27 +10,16 @@ function SaveClient() {
   async function registerClient(event) {
     event.preventDefault();
 
-    // const response = await fetch("http://localhost:1337/api/saveclient", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify({
-    //     firstName,
-    //     lastName,
-    //     email,
-    //     note,
-    //   }),
-    // });
-
-    // const data = await response.json();
-    // console.log(data);
-    axios.post("http://localhost:1337/api/saveclient", {
+    await axios.post("http://localhost:1337/api/saveclient", {
       firstName: firstName,
       lastName: lastName,
       email: email,
       note: note,
     });
+    setFirstName("")
+    setLastName("")
+    setEmail("")
+    setNote("")
   }
 
   return (

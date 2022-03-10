@@ -3,8 +3,8 @@ mongoose.Promise = global.Promise;
 
 const clientSchema = new mongoose.Schema(
   {
-    firstName: { type: String, required: true },
-    lastName: { type: String, required: true },
+    firstName: { type: String },
+    lastName: { type: String },
     email: { type: String, required: true, unique: true },
     note: { type: Number, required: true },
   },
