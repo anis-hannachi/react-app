@@ -7,6 +7,7 @@ function ShowClients() {
   const [clientList, setClientList] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
+  // fetch data
   useEffect(() => {
     axios.get("http://localhost:1337/api/client").then((response) => {
       setClientList(response.data);

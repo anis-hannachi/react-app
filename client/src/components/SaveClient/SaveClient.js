@@ -7,6 +7,7 @@ function SaveClient() {
   const [email, setEmail] = useState("");
   const [note, setNote] = useState("");
 
+  // add new client and reset the form
   async function registerClient(event) {
     event.preventDefault();
 

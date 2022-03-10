@@ -10,6 +10,7 @@ function AverageCalculation() {
     });
   }, []);
 
+//   calculate the average of the clients note
   function calculAverage() {
     const clientsNumber = clientList.length;
     const result = clientList.reduce(
